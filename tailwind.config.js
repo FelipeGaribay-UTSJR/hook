@@ -2,12 +2,14 @@
 module.exports = {
   content: [
     module.exports = {
-  content: [
-    './pages/**/*.{js,jsx,ts,tsx}',
-    './components/**/*.{js,jsx,ts,tsx}',
-  ],
-  // Other Tailwind CSS configurations...
-}
+      mode: 'jit',
+      purge: [
+        './pages/**/*.{js,ts,jsx,tsx}',
+        './components/**/*.{js,ts,jsx,tsx}',
+      ],
+      // Other Tailwind CSS configurations...
+    }
+    
 
   ],
   theme: {
